@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the modern minimalist</title>
+    <style>
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background: #f7f5f1;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 0px;
+        font-weight: lighter;
+      }
+      hr {
+        max-width: 50%;
+      }
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+
+      img {
+        display: block;
+        max-width: 50%;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+
+      p {
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+        font-weight: lighter;
+        padding: 10px;
+        line-height: 2;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      .styleIdeas {
+        text-decoration: none;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        font-weight: lighter;
+        color: black;
+        padding: 5px;
+      }
+
+      .styleIdeas:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 15px auto;
+        font-weight: lighter;
+        padding: 10px;
+        border-radius: 5px;
+        background: none;
+        font-size: 1rem;
+        border: 0.5px solid #d9c7c3;
+        transition: all 300ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #e1d9d5;
+        color: white;
+        border: none;
+      }
+
+      footer {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>the modern minimalist</h1>
+    <hr />
+    <h2>simple · elegant · refined</h2>
+    <img
+      src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/arent-pyke-contemporary-minimalist-living-room-1554398853.jpg?crop=0.9699201964395334xw:1xh;center,top&resize=980:*"
+      alt="Minimalist home decor"
+    />
+    <p>
+      modern minimalism relies on a few essential tenets that span both personal
+      and design influences in the world around us. modern minimalism
+      prioritizes <em>simplicity and elegance</em>. what is this? less is more
+      according to modern minimalism, and homes designed with a modern
+      minimalist theme will certainly represent that.
+    </p>
+    <hr />
+    <a
+      href="https://www.minimalismmadesimple.com/home/modern-minimalism/#:~:text=Modern%20minimalism%20relies%20on%20a,What%20is%20this%3F&text=Less%20is%20more%20according%20to,theme%20will%20certainly%20represent%20that"
+      target="_blank"
+      class="styleIdeas"
+    >
+      10 styles and ideas
+    </a>
+    <button>subscribe for weekly inspo</button>
+    <hr />
+    <footer>this page was built by nirali parikh</footer>
+    <script>
+      function weeklyInspo() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thanks " +
+            name +
+            "! We'll send a weekly email to " +
+            email +
+            " with modern minimalist inspiration 🌙"
+        );
+      }
+      let weeklyInspoButton = document.querySelector("button");
+
+      weeklyInspoButton.addEventListener("click", weeklyInspo);
+    </script>
+  </body>
+</html>
